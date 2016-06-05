@@ -1,5 +1,4 @@
-/* CSS Document */
-
+/* Main CSS */
 ::selection {
 	background:#adcca9;
 }
@@ -14,7 +13,7 @@
 
 div.navbar-fixed-top{
 	top:-60px;
-    transition:all .5s;
+	transition:all .5s;
 }
 
 .navbar_name{
@@ -23,7 +22,7 @@ div.navbar-fixed-top{
 	font-weight:bold;
 	letter-spacing:-2px;
 	color:#dbb387;
-    transition:all .3s;
+	transition:all .3s;
 }
 
 .navbar_name:hover{
@@ -44,7 +43,7 @@ div.navbar-fixed-top{
 	display:inline-block;
 	position:relative;
 	height:600px;
-    transition:all .3s;
+	transition:all .3s;
 }
 
 .banner_cont .behind, .banner_cont .background{
@@ -84,7 +83,7 @@ div.navbar-fixed-top{
 	letter-spacing:-4px;
 	text-shadow:2px 2px 4px rgba(0, 0, 0, .2);
 	color:#FFF;
-    transition:all .3s;
+	transition:all .3s;
 }
 
 .banner_cont .banner .small_label{
@@ -96,7 +95,7 @@ div.navbar-fixed-top{
 	color:#010101;
 	position:relative;
 	top:60px;
-    transition:all .3s;
+	transition:all .3s;
 }
 
 .banner_cont .banner .larger_label{
@@ -105,7 +104,7 @@ div.navbar-fixed-top{
 	color:#FFF;
 	position:relative;
 	top:80px;
-    transition:all .3s;
+	transition:all .3s;
 }
 
 .banner_cont .banner .smaller_label{
@@ -115,7 +114,7 @@ div.navbar-fixed-top{
 	color:#FFF;
 	position:relative;
 	top:85px;
-    transition:all .3s;
+	transition:all .3s;
 }
 
 .banner_cont .banner .button{
@@ -130,7 +129,7 @@ div.navbar-fixed-top{
 	letter-spacing:1px;
 	top:150px;
 	cursor:pointer;
-    transition:all .3s;
+	transition:all .3s;
 }
 
 .banner_cont .banner .button:hover{
@@ -154,7 +153,7 @@ div.navbar-fixed-top{
 	width:80%;
 	height:auto;
 	margin-bottom:12px;
-    transition:all .3s;
+	transition:all .3s;
 }
 
 .category_box .title{
@@ -223,7 +222,7 @@ div.navbar-fixed-top{
 	filter:grayscale(100%);
 	opacity:.5;
 	cursor:pointer;
-    transition:all .3s;
+	transition:all .3s;
 	outline:none;
 	border:none;
 }
@@ -235,8 +234,8 @@ div.navbar-fixed-top{
 }
 
 .accolade_circle{
-    width:120px;
-    height:120px;
+	width:120px;
+	height:120px;
 	margin-bottom:10px;
 	background:#89d681;
 	border-radius:50%;
@@ -244,15 +243,15 @@ div.navbar-fixed-top{
 }
 
 .accolade_circle .helper{
-    height:100%;
-    vertical-align:middle;
-    display:inline-block;
+	height:100%;
+	vertical-align:middle;
+	display:inline-block;
 }
 
 .accolade_circle img{
 	max-width:60%;
 	max-height:60%;
-    vertical-align:middle;	
+	vertical-align:middle;
 }
 
 .social_icon{
@@ -264,17 +263,17 @@ div.navbar-fixed-top{
 	font-weight:normal;
 	color:#ba9873 !important;
 	-webkit-text-rendering: optimizeLegibility;
-    -moz-text-rendering: optimizeLegibility;
-    -ms-text-rendering: optimizeLegibility;
-    -o-text-rendering: optimizeLegibility;
-    text-rendering: optimizeLegibility;
+	-moz-text-rendering: optimizeLegibility;
+	-ms-text-rendering: optimizeLegibility;
+	-o-text-rendering: optimizeLegibility;
+	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    -ms-font-smoothing: antialiased;
-    -o-font-smoothing: antialiased;
-    font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
 	-ms-font-feature-settings:"liga" 1;
-    transition:all .3s;
+	transition:all .3s;
 }
 
 .social_icon:hover{
@@ -390,4 +389,153 @@ div.navbar-fixed-top{
 		width:160px;
 		height:160px;
 	}
+}
+
+
+/* Mono Social Icons Font */
+@font-face {
+	font-family: 'Mono Social Icons';
+	src: url('/fonts/MonoSocialIconsFont-1.10.eot');
+	src: url('/fonts/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+		 url('/fonts/MonoSocialIconsFont-1.10.woff') format('woff'),
+		 url('/fonts/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+		 url('/fonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/* Progress Meter */
+.progress_meter{
+	position:relative;
+	display:inline-block;
+	width:100px;
+	height:100px;
+	margin:50px 0 10px 0;
+	padding:0;
+}
+
+.progress_meter ul{
+	list-style-type:none;
+	width:100px;
+	height:100px;
+	padding:0;
+	margin:0;
+}
+	
+.progress_meter li{
+	position:absolute;
+	top:0px;
+	width:100px;
+	height:100px;
+	padding:0;
+	margin:0;
+}
+
+.progress_meter p {
+	width: 100px;
+	height: 100px;
+	 padding: 0;
+	 margin: 0;
+}
+
+.progress_meter li p { -webkit-transition: all .7s ease-out;}
+
+.progress_meter span { display: block; width: 50px; height: 100px;}
+
+.progress_meter ul :nth-child(odd) { clip: rect(0px, 100px, 100px, 50px);}
+
+.progress_meter ul :nth-child(even) { clip: rect(0px, 50px, 100px, 0px);}
+
+.pie_left{
+	-moz-border-radius-topleft:50px;
+	-moz-border-radius-bottomleft:50px;
+	-webkit-border-top-left-radius:50px;
+	-webkit-border-bottom-left-radius:50px;
+	border-top-left-radius:50px;
+	border-bottom-left-radius:50px;
+}
+
+.pie_right{
+	margin-left:50px;
+	-moz-border-radius-topright:50px;
+	-moz-border-radius-bottomright:50px;
+	-webkit-border-top-right-radius:50px;
+	-webkit-border-bottom-right-radius:50px;
+	border-top-right-radius:50px;
+	border-bottom-right-radius:50px;
+}
+
+#c1_l span,#c1_r span{
+	background:#89d681;
+}
+
+
+/* progress */
+#center-circle{
+	width:90px;height:90px;position:absolute;z-index:1000;top:5px;background:#fff;left:5px;text-align:center;
+	border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;-khtml-border-radius:50%;-o-border-radius:50%;
+}
+#center-circle span{
+	display:inline-block;margin-top:50%;line-height:0;font-weight:bold;font-size:30px;color:#5f835a;
+}
+
+.percent80_l{
+	-moz-transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+}
+
+.percent80_r{
+	-moz-transform:rotate(108deg);
+	-webkit-transform:rotate(108deg);
+	-o-transform:rotate(108deg);
+}
+
+.percent85_l{
+	-moz-transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+}
+
+.percent85_r{
+	-moz-transform:rotate(126deg);
+	-webkit-transform:rotate(126deg);
+	-o-transform:rotate(126deg);
+}
+
+.percent90_l{
+	-moz-transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+}
+
+.percent90_r{
+	-moz-transform:rotate(144deg);
+	-webkit-transform:rotate(144deg);
+	-o-transform:rotate(144deg);
+}
+
+.percent95_l{
+	-moz-transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+}
+
+.percent95_r{
+	-moz-transform:rotate(162deg);
+	-webkit-transform:rotate(162deg);
+	-o-transform:rotate(162deg);
+}
+
+.percent98_l{
+	-moz-transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+}
+
+.percent98_r{
+	-moz-transform:rotate(172.8deg);
+	-webkit-transform:rotate(172.8deg);
+	-o-transform:rotate(172.8deg);
 }
