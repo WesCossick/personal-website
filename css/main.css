@@ -255,29 +255,25 @@ div.navbar-fixed-top{
 }
 
 .social_icon{
+	width:84px;
+	height:84px;
+	padding-top:20px;
 	margin:0 20px 20px 0;
-	font-size:100px;
+	background:#ba9873;
+	border-radius:50%;
+	font-size:44px;
+	line-height:44px;
 	text-decoration:none !important;
-	font-family:'Mono Social Icons';
 	font-style:normal;
 	font-weight:normal;
-	color:#ba9873 !important;
-	-webkit-text-rendering: optimizeLegibility;
-	-moz-text-rendering: optimizeLegibility;
-	-ms-text-rendering: optimizeLegibility;
-	-o-text-rendering: optimizeLegibility;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-font-smoothing: antialiased;
-	-ms-font-smoothing: antialiased;
-	-o-font-smoothing: antialiased;
-	font-smoothing: antialiased;
-	-ms-font-feature-settings:"liga" 1;
+	text-align:center;
+	color:#fff !important;
+	display:inline-block;
 	transition:all .3s;
 }
 
 .social_icon:hover{
-	color:#d6af84 !important;
+	background:#d6af84;
 }
 
 .footer{
@@ -389,19 +385,6 @@ div.navbar-fixed-top{
 		width:160px;
 		height:160px;
 	}
-}
-
-
-/* Mono Social Icons Font */
-@font-face {
-	font-family: 'Mono Social Icons';
-	src: url('/fonts/MonoSocialIconsFont-1.10.eot');
-	src: url('/fonts/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
-		 url('/fonts/MonoSocialIconsFont-1.10.woff') format('woff'),
-		 url('/fonts/MonoSocialIconsFont-1.10.ttf') format('truetype'),
-		 url('/fonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
-	font-weight: normal;
-	font-style: normal;
 }
 
 
