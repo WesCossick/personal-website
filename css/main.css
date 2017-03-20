@@ -286,13 +286,13 @@ div.navbar-fixed-top{
 }
 
 
-@media only screen and (min-width: 0px) and (max-width: 400px) {
+@media only screen and (min-width: 0px) and (max-width: 425px) {
 	.banner_cont{
 		height:470px !important;
 	}
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 425px) {
 	.fix-small-screen-breaking{
 		display:none;
 	}
