@@ -13,7 +13,7 @@ body{
 }
 
 .intro{
-	margin: 100px 0;
+	margin: 10vw 0;
 	padding: 0;
 }
 
@@ -50,8 +50,8 @@ body{
 	max-width: 660px;
 }
 
-.row: last-of-type{
-	margin-bottom: 6em;
+.row:last-of-type{
+	margin-bottom: 15vw;
 }
 
 .row h2{
@@ -63,20 +63,20 @@ body{
 }
 
 .row .text{
-	font-size: 1.75em;
+	font-size: 2.8vw;
 	line-height: 1.1;
 	color: #777;
 }
 
 .row .social{
-	margin-bottom: .5em;
-	font-size: 1.5em;
+	margin-bottom: 1vw;
+	font-size: 2.5vw;
 	line-height: 1;
 }
 
 .row .social a{
-	padding: .6em;
-	margin-right: .3em;
+	padding: 1.5vw;
+	margin-right: 1vw;
 	background: #72B52F;
 	border-radius: 50%;
 	text-decoration: none;
