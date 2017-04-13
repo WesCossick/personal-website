@@ -214,7 +214,7 @@ body{
 	}
 }
 
-@media only screen and (max-width: 374px)  {
+@media only screen and (max-width: 450px)  {
 	.display-extra-small-screen{
 		display:inline;
 	}
