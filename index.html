@@ -13,6 +13,9 @@
 	<!-- Adobe Fonts -->
 	<link rel="stylesheet" href="https://use.typekit.net/bym0yob.css">
 	
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/30aca2e713.js" crossorigin="anonymous"></script>
+	
 	<!-- Structured data -->
 	<script type="application/ld+json">
 	{
@@ -25,30 +28,25 @@
 			"https://www.facebook.com/WesCossick",
 			"https://www.instagram.com/WesCossick/",
 			"https://www.linkedin.com/in/WesCossick",
-			"http://stackoverflow.com/users/1250940/wes-cossick",
 			"https://github.com/WesCossick",
+			"https://gitlab.com/wescossick",
 			"https://medium.com/@WesCossick"
 		]
 	}
 	</script>
 	
-	<!-- Preconnects -->
-	<link rel="preconnect" href="https://www.google-analytics.com">
-	<link rel="preconnect" href="https://d1azc1qln24ryf.cloudfront.net">
-	
 	<!-- Inlined styles -->
 	<style>
-	::selection {
-		background: #dfffbf;
-	}
-	
-	::-moz-selection {
-		background: #dfffbf;
-	}
-	
 	body {
 		text-align: center;
 		color: #000;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
 	}
 	
 	.intro {
@@ -94,10 +92,10 @@
 	}
 	
 	.row h2 {
-		margin: 0 0 .8vw 0;
+		margin: 0 0 .6vw 0;
 		padding: 0;
 		font-size: 5vw;
-		text-transform: lowercase;
+		text-transform: uppercase;
 		color: #333;
 	}
 	
@@ -113,15 +111,24 @@
 	}
 	
 	.row .social a {
-		padding: 1.5vw;
+		width: 3.125vw;
+		height: 3.125vw;
+		padding: 1vw;
 		margin-right: 1vw;
-		margin-bottom: 1vw;
+		margin-bottom: 1.5vw;
 		background: #72B52F;
 		border-radius: 50%;
 		text-decoration: none;
 		cursor: pointer;
 		color: #fff;
-		display: inline-block;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		transition: background 250ms ease-in-out;
+	}
+	
+	.row .social a:hover {
+		background: #59941e;
 	}
 	
 	.row .social a:last-child {
@@ -167,7 +174,7 @@
 		}
 		
 		.row:last-of-type {
-			margin-bottom: 150px;
+			margin-bottom: 100px;
 		}
 		
 		.row h2 {
@@ -183,9 +190,11 @@
 		}
 		
 		.row .social a {
-			padding: 15px;
+			padding: 10px;
 			margin-right: 10px;
-			margin-bottom: 10px;
+			margin-bottom: 15px;
+			width: 31.25px;
+			height: 31.25px;
 		}
 	}
 	
@@ -281,51 +290,38 @@
 	</div>
 	
 	<div class="row">
-		<h2 class="tk-neuzeit">What I do<span class="accent-color">.</span></h2>
-		
-		<div class="text">
-			I provide the vision, guide the growth, and set the company culture for <a href="https://www.sparksuite.com/" target="_blank" rel="noopener noreferrer">Sparksuite</a>. I still have a hand in running many components of this company and its subsidiaries. You might find me writing code, helping customers, making hires, or striking business deals.
-		</div>
-	</div>
-	
-	<div class="row">
-		<h2 class="tk-neuzeit">Things I love<span class="accent-color">.</span></h2>
-		
-		<div class="text">
-			I love clean, highly polished software; the kind that always works well, makes your life easier, and is super intuitive. I love overcoming challenges and cleverly solving problems. I love playing sand volleyball, disc golf, and just about any other sport. I love my wife, Sarah. I love God with my whole being.
-		</div>
-	</div>
-	
-	<div class="row">
-		<h2 class="tk-neuzeit">How I lead<span class="accent-color">.</span></h2>
-		
-		<div class="text">
-			My role as the visionary allows me to develop exciting plans and execute them with precision. But I can’t do that alone. To that end, I build teams of extraordinary people and inspire them to create outstanding work. I aim to be a servant leader whom others naturally enjoy following.
-		</div>
-	</div>
-	
-	<div class="row">
-		<h2 class="tk-neuzeit">Where I find community<span class="accent-color">.</span></h2>
-		
-		<div class="text">
-			I’m actively involved at my local church in The Woodlands, TX. Through fellowship with strong believers, I strive to mature my faith continually. I regularly participate in Bible studies, discipleship groups, and service opportunities.
-		</div>
-	</div>
-	
-	<div class="row">
 		<h2 class="tk-neuzeit">Connect with me<span class="accent-color">.</span></h2>
 		
 		<div class="social">
-			<a href="https://www.twitter.com/WesCossick" target="_blank" rel="noopener noreferrer" class="socicon-twitter" aria-label="Twitter profile"></a>
-			<a href="https://www.facebook.com/WesCossick" target="_blank" rel="noopener noreferrer" class="socicon-facebook" aria-label="Facebook profile"></a>
-			<a href="https://www.instagram.com/WesCossick" target="_blank" rel="noopener noreferrer" class="socicon-instagram no-margin-extra-small-screen" aria-label="Instagram profile"></a>
+			<a href="https://www.twitter.com/WesCossick" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile">
+				<i class="fa-brands fa-twitter fa-fw"></i>
+			</a>
+
+			<a href="https://www.instagram.com/WesCossick" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile">
+				<i class="fa-brands fa-instagram fa-fw"></i>
+			</a>
+
+			<a href="https://www.facebook.com/WesCossick" target="_blank" rel="noopener noreferrer" class="no-margin-extra-small-screen" aria-label="Facebook profile">
+				<i class="fa-brands fa-facebook-f fa-fw"></i>
+			</a>
 			
 			<br class="display-extra-small-screen">
 			
-			<a href="https://www.linkedin.com/in/WesCossick" target="_blank" rel="noopener noreferrer" class="socicon-linkedin" aria-label="LinkedIn profile"></a>
-			<a href="https://www.stackoverflow.com/users/1250940/wes-cossick" target="_blank" rel="noopener noreferrer" class="socicon-stackoverflow" aria-label="Stack Overflow profile"></a>
-			<a href="https://www.github.com/WesCossick" target="_blank" rel="noopener noreferrer" class="socicon-github" aria-label="GitHub profile"></a>
-			<a href="https://medium.com/@WesCossick" target="_blank" rel="noopener noreferrer" class="socicon-medium" aria-label="Medium profile"></a>
+			<a href="https://www.linkedin.com/in/WesCossick" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+				<i class="fa-brands fa-linkedin-in fa-fw"></i>
+			</a>
+
+			<a href="https://www.github.com/WesCossick" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+				<i class="fa-brands fa-github fa-fw"></i>
+			</a>
+
+			<a href="https://gitlab.com/wescossick" target="_blank" rel="noopener noreferrer" aria-label="Medium profile">
+				<i class="fa-brands fa-gitlab fa-fw"></i>
+			</a>
+
+			<a href="https://medium.com/@WesCossick" target="_blank" rel="noopener noreferrer" aria-label="Medium profile">
+				<i class="fa-brands fa-medium fa-fw"></i>
+			</a>
 		</div>
 		
 		<div class="text">
@@ -343,8 +339,5 @@
 	  ga('create', 'UA-5808021-12', 'auto');
 	  ga('send', 'pageview');
 	</script>
-	
-	<!-- Deferred stylesheet -->
-	<link rel="stylesheet" href="socicon.css">
 </body>
 </html>
